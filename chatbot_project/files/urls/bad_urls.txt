@@ -12,3 +12,7 @@ https://www.d20srd.org/d20/dungeon/
 https://www.d20srd.org/d20/encounter/
 https://www.d20srd.org/d20/magic/shop.html
 https://www.d20srd.org/d20/treasure/
+http://www.wizards.com/default.asp?x=d20/article/srdarchive
+http://www.wizards.com/d20
+http://www.wizards.com/default.asp?x=d20/article/msrd
+http://www.wizards.com/default.asp?x=d20/srdfaq/20040123c

@@ -1,0 +1,282 @@
+https://www.d20srd.org/srd/prestigeClasses/mysticTheurge.htm
+
+Mystic Theurge
+
+
+Table: The Mystic Theurge
+
+
+Level
+
+Base
+Attack
+Bonus
+
+Fort
+Save
+
+Ref
+Save
+
+Will
+Save
+
+Spells per Day
+
+
+
+1st
+
++0
+
++0
+
++0
+
++2
+
++1 level of existing arcane spellcasting class/
++1 level of existing divine spellcasting class
+
+
+
+2nd
+
++1
+
++0
+
++0
+
++3
+
++1 level of existing arcane spellcasting class/
++1 level of existing divine spellcasting class
+
+
+
+3rd
+
++1
+
++1
+
++1
+
++3
+
++1 level of existing arcane spellcasting class/
++1 level of existing divine spellcasting class
+
+
+
+4th
+
++2
+
++1
+
++1
+
++4
+
++1 level of existing arcane spellcasting class/
++1 level of existing divine spellcasting class
+
+
+
+5th
+
++2
+
++1
+
++1
+
++4
+
++1 level of existing arcane spellcasting class/
++1 level of existing divine spellcasting class
+
+
+
+6th
+
++3
+
++2
+
++2
+
++5
+
++1 level of existing arcane spellcasting class/
++1 level of existing divine spellcasting class
+
+
+
+7th
+
++3
+
++2
+
++2
+
++5
+
++1 level of existing arcane spellcasting class/
++1 level of existing divine spellcasting class
+
+
+
+8th
+
++4
+
++2
+
++2
+
++6
+
++1 level of existing arcane spellcasting class/
++1 level of existing divine spellcasting class
+
+
+
+9th
+
++4
+
++3
+
++3
+
++6
+
++1 level of existing arcane spellcasting class/
++1 level of existing divine spellcasting class
+
+
+
+10th
+
++5
+
++3
+
++3
+
++7
+
++1 level of existing arcane spellcasting class/
++1 level of existing divine spellcasting class
+
+
+
+Hit Die
+
+	d4.
+
+Requirements
+
+	To qualify to become a mystic theurge, a character must fulfill all the following criteria.
+
+Skills
+
+
+Knowledge
+ (arcana) 6 ranks, 
+Knowledge
+ (religion) 6 ranks.
+
+Spells
+
+	Able to cast 2nd-level divine spells and 2nd-level arcane spells.
+
+Class Skills
+
+	The mystic theurge’s class skills (and the key ability for each skill) are 
+Concentration
+ (Con), 
+Craft
+ (Int), 
+Decipher Script
+ (Int), 
+Knowledge
+ (arcana) (Int), 
+Knowledge
+ (religion) (Int), 
+Profession
+ (Wis), 
+Sense Motive
+ (Wis), and 
+Spellcraft
+ (Int).
+
+Skill Points at Each Level
+
+	2 + Int modifier.
+
+Class Features
+
+	All of the following are features of the mystic theurge prestige class.
+
+Weapon and Armor Proficiency
+
+	Mystic theurges gain no 
+proficiency
+ with any weapon or armor.
+
+Spells per Day
+
+	When a new mystic theurge level is gained, the character gains new spells per day as if he had also gained a level in any one arcane spellcasting class he belonged to before he added the prestige class and any one divine spellcasting class he belonged to previously. He does not, however, gain any other benefit a character of that class would have gained. This essentially means that he adds the level of mystic theurge to the level of whatever other arcane spellcasting class and divine spellcasting class the character has, then determines spells per day and caster level accordingly. If a character had more than one arcane spellcasting class or more than one divine spellcasting class before he became a mystic theurge, he must decide to which class he adds each level of mystic theurge for the purpose of determining spells per day.
+
+
+- GOOGLE 300x250 ADS -
+
+
+- LEFT -
+
+ /1004459/d20srd300x250-1 
+
+
+
+
+- RIGHT -
+
+ /1004459/d20srd300x250-2 
+
+
+
+
+
+- END GOOGLE 300x250 ADS -
+
+		The Hypertext d20 SRD
+TM
+ is owned by 
+BoLS Interactive LLC
+.	
+
+		The text on this page is Open Game Content, and is licensed for public use under the terms of the 
+Open Game License v1.0a
+.	
+
+		‘d20 System’ and the ‘d20 System’ logo are trademarks of Wizards of the Coast, Inc.
+and are used according to the terms of the d20 System License version 6.0.
+A copy of this License can be found at 
+www.wizards.com/d20
+.	
+
+ removing standards place holder 
+
+
+ Quantcast Tag 
+
+
+
+ End Quantcast tag 
+
+
