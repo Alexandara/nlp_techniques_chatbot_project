@@ -123,23 +123,24 @@ Canon:5e Rule Tip/Round Down
 
  Featured Articles
 
-Sigil Prep
+Ranged Threat
 
  
 
-A comedic D&D setting full of whacky characters, high school and university hijinks, and the opportunity to meet individuals from across the planes.
-Read the full feat text at: 
-Sigil Prep
+Ranged characters rarely get the chance to play in the zone control game that meleers often engage in. With this feat, you too can use that bow or throwing axe to cause enemies to be wary when they move about the battlefield!
+Read the full text at: 
+Ranged Threat
 
 
-Facts about Sigil Prep
+Facts about Ranged Threat
 
 Author:
- DM Swift
+ 
+Ghostwheel
 
 Category:
  
-3.5e Campaign Settings
+3.5 Feat
 
   News & Community
 
@@ -204,12 +205,12 @@ Click for full details
 .
 
 
- NewPP limit reportCached time: 20240205190138Cache expiry: 86400Dynamic content: false[SMW] In‐text annotation parser time: 0 secondsCPU time usage: 0.075 secondsReal time usage: 0.227 secondsPreprocessor visited node count: 61/1000000Preprocessor generated node count: 228/1000000Post‐expand include size: 1744/2097152 bytesTemplate argument size: 0/2097152 bytesHighest expansion depth: 4/40Expensive parser function count: 0/100
+ NewPP limit reportCached time: 20240208204138Cache expiry: 86400Dynamic content: false[SMW] In‐text annotation parser time: 0 secondsCPU time usage: 0.087 secondsReal time usage: 0.244 secondsPreprocessor visited node count: 61/1000000Preprocessor generated node count: 228/1000000Post‐expand include size: 1812/2097152 bytesTemplate argument size: 0/2097152 bytesHighest expansion depth: 4/40Expensive parser function count: 0/100
 
-Transclusion expansion time report (%,ms,calls,template)100.00%    9.269      1 -total 80.99%    7.507      1 Main_Page/Favorites 63.96%    5.928      1 Main_Page/Favorites/New 12.19%    1.130      1 Main_Page/News  8.08%    0.749      1 Sigil_Prep_(3.5e_Campaign_Setting)/Favorite_Blurb  4.39%    0.407      1 Template:Extension_DPL
+Transclusion expansion time report (%,ms,calls,template)100.00%   10.550      1 -total 84.38%    8.902      1 Main_Page/Favorites 68.93%    7.272      1 Main_Page/Favorites/New  9.25%    0.976      1 Main_Page/News  7.09%    0.748      1 Ranged_Threat_(3.5e_Feat)/Favorite_Blurb  4.22%    0.445      1 Template:Extension_DPL
 
 
- Saved in parser cache with key dnd_wiki:pcache:idhash:32151-0!canonical and timestamp 20240205190138 and revision id 331528 
+ Saved in parser cache with key dnd_wiki:pcache:idhash:32151-0!canonical and timestamp 20240208204138 and revision id 331528 
 
  
 						Retrieved from "

@@ -1,26 +1,30 @@
 from bs4 import BeautifulSoup
 import requests
 import re
-import urllib.request
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin
 import os
 import nltk
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import TfidfVectorizer
+import pickle
 
 class WebCrawler():
 	def __init__(self, urls):
 		print("Initializing Web Crawler...")
-		# nltk.download('punkt')
-		# nltk.download('stopwords')
-		# nltk.download('wordnet')
-		# nltk.download('averaged_perceptron_tagger')
+		nltk.download('punkt')
+		nltk.download('stopwords')
+		nltk.download('wordnet')
+		nltk.download('averaged_perceptron_tagger')
 		self.starter_urls = urls
 		try:
 			self.urls = self.read_file_into_list("files/urls/urls.txt")
 		except:
 			self.urls = []
 		self.tokens = self.tokenize_clean_text()
+		try:
+			self.terms = self.read_file_into_list("files/important_terms/chosenterms.txt")
+		except:
+			self.terms = []
 
 	# Instructions:
 	# Start with 1-3 URLs that represent a topic (a sport, a celebrity, a place, etc.) and crawl to
@@ -178,13 +182,16 @@ class WebCrawler():
 			clean_text = ""
 			for info in information:
 				new_info = info.replace("\n", "")
+				new_info = new_info.replace("\t", "")
+				new_info = new_info.replace("\xa0", "")
 				if len(new_info) != 0:
 					clean_text += new_info
 					if new_info[-1] != " ":
 						clean_text += " "
 			f = open("files/clean_information/clean_" + file, "w")
-			f.write(url)
-			f.write("\n")
+			# Uncomment this line to include URLs in the clean files
+			# (the URLs are included in the raw information and the file numbers match)
+			# f.write(url + "\n")
 			f.write(clean_text)
 			f.close()
 
@@ -194,6 +201,10 @@ class WebCrawler():
 	# stopwords and punctuation first. Output the top 25-40 important terms.
 	# • Manually determine the top 10-15 terms based on your domain knowledge.
 	def extract_important_terms(self):
+		"""
+		This method performs tf-idf on the clean texts and prints all the terms
+		with a tf-idf score greater than 5 to a file.
+		"""
 		print("Extracting important terms...")
 		# Get cleaned text if not gotten
 		if not self.tokens:
@@ -228,14 +239,20 @@ class WebCrawler():
 			f.write("\n")
 		f.close()
 
-	def tokenize_clean_text(self):
+	@staticmethod
+	def tokenize_clean_text():
+		"""
+		This tokenizes the clean text into sentences.
+		:return: tokenized clean text in the following format:
+				[["Document one.", "Sentence two in document one."], [...] ... ]
+		"""
 		text = []
 		files = os.listdir("files/clean_information/")
 		if len(files) == 0:
 			return []
 		for file in files:
 			f = open("files/clean_information/" + file, "r")
-			toks = nltk.word_tokenize(f.read().lower())
+			toks = nltk.sent_tokenize(f.read().lower())
 			f.close()
 			text.append(toks)
 		return text
@@ -245,5 +262,21 @@ class WebCrawler():
 	# important terms. The “knowledge base” can be a simple as a Python dict which you
 	# pickle or a simple sql database.
 	def build_knowledge_base(self):
+		"""
+		This creates and pickles a knowledge base from the cleaned up text and
+		chosen important terms.
+		"""
 		print("Building knowledge base...")
-
+		kb = {'ttrpg': ["Ttrpgs are fun games to play with your friends."]}
+		documents = self.tokenize_clean_text()
+		# Build a knowledge base for every term
+		for term in self.terms:
+			chosen_sentences = []
+			for document in documents:
+				for sentence in document:
+					if term in sentence:
+						chosen_sentences.append(sentence)
+			kb[term] = chosen_sentences
+		# Pickles the knowledge base dictionary
+		with open("files/knowledge_base/kb.pickle", 'wb') as handle:
+			pickle.dump(kb, handle, protocol=pickle.HIGHEST_PROTOCOL)

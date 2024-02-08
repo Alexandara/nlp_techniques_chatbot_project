@@ -18,7 +18,7 @@ if __name__ == '__main__':
                         "https://www.d20srd.org/srd/feats.htm"]
         crawler = web_crawler.WebCrawler(starter_urls)
         # Find URLs from starter URLs provided
-        if crawler.urls == []:
+        if not crawler.urls:
             crawler.find_urls()
         # Scrape the data from the URLs
         files = os.listdir("files/raw_information")
@@ -26,10 +26,13 @@ if __name__ == '__main__':
             crawler.scrape_all_urls()
         # Clean up found data
         clean_files = os.listdir("files/clean_information")
-        if len(files) == 0:
+        if len(clean_files) == 0:
             crawler.clean_files()
         # Extract important terms
-        crawler.extract_important_terms()
+        if not crawler.terms:
+            crawler.extract_important_terms()
         # Build final knowledge base
         crawler.build_knowledge_base()
+
+    adamant = chatbot.Chatbot()
 

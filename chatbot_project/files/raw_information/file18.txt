@@ -118,9 +118,9 @@ Trending
 
 
 
-Garviel Loken
+Ollanius Persson
 
-Garviel Loken was the Captain of the 10th company of the Luna Wolves Space Marine Legion during the latter half of the Great Crusade.[1d] After distinguishing himself in battle, he was inducted into the Mournival,[1b] the advisory... 
+Ollanius Persson is a Perpetual and mysterious figure in history related to the myth of Ollanius Pius.[3]... 
 Read More >>
 
 
@@ -131,6 +131,7 @@ Read More >>
 
 
 
+Grand Alliance of Order
 
 
 
@@ -138,7 +139,7 @@ Read More >>
 
 
 
-Samus
+Dark Angels
 
 
 
@@ -146,7 +147,7 @@ Samus
 
 
 
-Ollanius Persson
+Garviel Loken
 
 
 
@@ -154,7 +155,7 @@ Ollanius Persson
 
 
 
-Nagash
+The End Times
 
 
 
@@ -179,20 +180,12 @@ Warhammer 40,000
 
 
 
-Constantin Valdor
+John Grammaticus
 
-Constantin Valdor ('Emperor's Spear'), the First of the Ten Thousand[6c], was the Chief Custodian to the Emperor of Mankind as Captain-General of the Adeptus Custodes at the time of the Unification Wars, Great Crusade, and the Hor... 
+John Grammaticus was an enigmatic human psyker who served as an agent of a xenos organization known as the Cabal in the latter days of the Great Crusade. Among the powers he wielded was the ability to understand and speak any lang... 
 Read More >>
 
 
-
-
-
-
-
-
-
-Dark Angels
 
 
 
@@ -208,7 +201,7 @@ Emperor of Mankind
 
 
 
-John Grammaticus
+Ultramarines
 
 
 
@@ -217,6 +210,14 @@ John Grammaticus
 
 
 Dark King (Entity)
+
+
+
+
+
+
+
+Perpetual
 
 
 
@@ -233,7 +234,7 @@ Videos
 
 
 
-YouTube Video VVVJVU5Rc3hpUlVDcWpMcjA5eTZtY25BLjlfZ2czZFpIR3FR
+YouTube Video VVVJVU5Rc3hpUlVDcWpMcjA5eTZtY25BLlZiNVVoN1F4MTJN
 
 
 
@@ -243,6 +244,25 @@ YouTube Video VVVJVU5Rc3hpUlVDcWpMcjA5eTZtY25BLjlfZ2czZFpIR3FR
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+The Great Crusade || Warhammer 40K Lore
+
+
+
+
+
+ 
 
 
 
@@ -343,25 +363,6 @@ Horus Lupercal - The Traitor || Warhammer 40K Lore
 
 
 
-
-
-
-
-
-
-
-Mortarion - Primarch of the Death Guard || Warhammer 40K Lore
-
-
-
-
-
- 
-
-
-
-
-
  
 
 
@@ -405,8 +406,9 @@ Age of Sigmar
 
 
 
+Stormhost
 
-0... 
+Stormhost are autonomous armies of Stormcast Eternals. Each Stormhost has it's own heraldry, Lord-Commander, and history and only Sigmar knows their true number. The Stormhosts are themselves divided further into Chambers.[4a][10b... 
 Read More >>
 
 
@@ -417,6 +419,7 @@ Read More >>
 
 
 
+Stormcast Eternals
 
 
 
@@ -424,6 +427,7 @@ Read More >>
 
 
 
+Realm of Shyish
 
 
 
@@ -431,6 +435,7 @@ Read More >>
 
 
 
+Ossiarch Bonereapers
 
 
 
@@ -438,6 +443,7 @@ Read More >>
 
 
 
+Forum
 
 
 
@@ -457,23 +463,7 @@ The Old World
 
 
 
-The Empire
-
-
-
-
-
-
-
-Vlad von Carstein
-
-
-
-
-
-
-
-Neferata (Character)
+Forum
 
 
 
@@ -482,6 +472,22 @@ Neferata (Character)
 
 
 Abhorash
+
+
+
+
+
+
+
+Dwarf
+
+
+
+
+
+
+
+List of Novels and Short Stories
 
 
 
@@ -520,7 +526,7 @@ Ollanius Persson
 
 
 
-Constantin Valdor
+Dark Angels
 
 
 
@@ -528,7 +534,7 @@ Constantin Valdor
 
 
 
-Dark King (Entity)
+Samus
 
 
 
@@ -547,14 +553,6 @@ Warmachine / Hordes
 
 
 
-Order of the Wall
-
-
-
-
-
-
-
 Cygnar
 
 
@@ -563,7 +561,7 @@ Cygnar
 
 
 
-Nidoboros
+Blighterghast
 
 
 
@@ -571,7 +569,15 @@ Nidoboros
 
 
 
-Oleg Strakhov
+Conquest
+
+
+
+
+
+
+
+Dragon
 
 
 

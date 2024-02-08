@@ -113,15 +113,15 @@ Trending Topics
 
 
 
-Dungeons & Dragons
-
-
-
-
-
-
-
 Warhammer 40k
+
+
+
+
+
+
+
+Dungeons & Dragons
 
 
 
@@ -145,23 +145,7 @@ Age of Sigmar
 
 
 
-Trailers
-
-
-
-
-
-
-
 Pop Culture
-
-
-
-
-
-
-
-Cosplay
 
 
 
@@ -178,6 +162,22 @@ Star Wars
 
 
 Magic: The Gathering
+
+
+
+
+
+
+
+Trailers
+
+
+
+
+
+
+
+Cosplay
 
 
 
@@ -231,38 +231,12 @@ Bell of Lost Souls
 
 
 
-Star Wars
+Pop Culture
 
-Star Wars: The Naboo Starfighter — The Most Beautiful Starfighter in the Galaxy Comes From the Movie You Love to Hate
+Oh My Glob, It’s Fionna & Cake Explained
 
-You might hate The Phantom Menace, but you can’t deny that the N-1 Starfighter from Naboo has bombad style.
+Fionna and Cake started as bad in-universe fanfiction and turned into one of the biggest shows of last year.
 
-
-J.R. Zambrano
-
-
-
-
-
-
-
-
-
-Trailers
-
-‘Longlegs’ – Occult Mystery Starring Nic Cage Gets a Creepy First Trailer
-
-Mars Garrett
-
-
-
-
-
-
-
-Dungeons & Dragons
-
-Let’s Play D&D With the Ghostbusters
 
 Meaghan Colleran
 
@@ -272,23 +246,49 @@ Meaghan Colleran
 
 
 
+
+
 RPGs
 
-‘Memento Mori’ – An RPG of Dreams & Corruption – in Last Days of Crowdfunding
+‘Perils & Princesses’ RPG: Ditch the Prince for Dark Fantasy Adventure
+
+Meaghan Colleran
+
+
+
+
+
+
+
+Dungeons & Dragons
+
+‘Baldur’s Gate 3’ Embraces Tabletop Chaos as Player Beats Game With Party of Cats
+
+J.R. Zambrano
+
+
+
+
+
+
+
+Tabletop News
+
+New RPG Roundup: ‘Unexpected Guests’ for L5R, ‘Book of Monsters’ Bundle, and More
+
+Matt Sall
+
+
+
+
+
+
+
+Pop Culture
+
+Donald Glover Reveals What the Highly Anticipated ‘Community’ Movie is About
 
 Mars Garrett
-
-
-
-
-
-
-
-News
-
-Marvel: Crisis Protocol – Iceman & Shadowcat Bring Utility To The X-Men Roster
-
-Adam Harrison
 
 
 
@@ -311,16 +311,14 @@ Trending
 
 
 
-Dungeons & Dragons
+Warhammer 40k
 
-D&D: Forget Rats In Basements Here Are Five Low-Level Adventure Hooks
+This Week’s Warhammer 40K Products & Pricing CONFIRMED – Orks & Horus Heresy!
 
-Are your adventurers tired of the same old rats in the basement of yonder in? Here’s five alternate adventure hooks.
-
-
-J.R. Zambrano
+We return to Grimdark, with the new Horus Heresy book, and a new Ork! Take a look at these prices.
 
 
+Larry Vela
 
 
 
@@ -328,11 +326,37 @@ J.R. Zambrano
 
 
 
-Dungeons & Dragons
 
-New 5e RPG Roundup: ‘Beacon Bear’, ‘Nights of Chrome’ and More
 
-Meaghan Colleran
+Warhammer 40k
+
+Warhammer 40K: Heavy Metal – The Astra Militarum’s Largest Vehicles
+
+Larry Vela
+
+
+
+
+
+
+
+Warhammer 40k
+
+Warhammer 40K: 1993’s First Tyranid Minis – Still Affecting 10th Edition
+
+Larry Vela
+
+
+
+
+
+
+
+Warhammer 40k
+
+Games Workshop Rumor Engine: Pull The Tab
+
+Adam Harrison
 
 
 
@@ -345,30 +369,6 @@ Warhammer 40k
 Goatboy’s Warhammer 40K: Top 5 Balance Dataslate Misses
 
 Thomas / Goatboy
-
-
-
-
-
-
-
-News
-
-‘Warhammer: The Old World’: Hey Games Workshop, The Game Doesn’t Need The Rule-Of-Three
-
-Abe Apfel
-
-
-
-
-
-
-
-Trailers
-
-‘Squid Game S2’, ‘Beverly Hills Cop’, ‘Avatar’, and More in Netflix 2024 Preview
-
-Mars Garrett
 
 
 
@@ -395,21 +395,9 @@ Recent
 
 
 
-Dungeons & Dragons
-
-D&D 5E Guide: How to Start Being a Dungeon Master
-
-J.R. Zambrano
-
-
-
-
-
-
-
 Magic: The Gathering
 
-MTG: Get a Clue about ‘Murders at Karlov Manor’
+MTG: Ride of the Valkyries – Top 5 Angel Commanders
 
 Clint Lienau
 
@@ -419,9 +407,21 @@ Clint Lienau
 
 
 
-Warhammer 40k
+Tabletop News
 
-Warhammer: 2024 US Open Series Announced – Plan Your Trips Now
+Get the Khitomer Accords Ready, New ‘Star Trek Adventures’ Expansion Takes on ‘Federation-Klingon War’
+
+J.R. Zambrano
+
+
+
+
+
+
+
+News
+
+Star Wars: Shatterpoint – Plo Koon And Ahsoka Tano Previews
 
 Adam Harrison
 
@@ -433,7 +433,7 @@ Adam Harrison
 
 Warhammer 40k
 
-Warhammer 40K: Kroot Hounds Revealed – Send The Dogs Out
+Horus Heresy: Siege Breaker Consul Are Here To Blow Stuff Up
 
 Adam Harrison
 
@@ -445,7 +445,7 @@ Adam Harrison
 
 Dungeons & Dragons
 
-D&D: How to Play a Dragonborn
+Joe Manganiello’s Live-Action ‘Dragonlance’ Show is Reportedly Dead in Water
 
 J.R. Zambrano
 
@@ -455,23 +455,23 @@ J.R. Zambrano
 
 
 
-Tabletop News
+Warhammer 40k
 
-‘Carcassonne’, the Gold Standard For Board Games, is 25% Off
+Warhammer 40K: List Of The Week – Aeldari Aspect Warriors Strike Again
 
-Matt Sall
-
-
+Adam Harrison
 
 
 
 
 
-Tabletop News
 
-Kickstarter Highlights: ‘Altered TCG’, ‘8-Bit Theater RPG’, and More
 
-Matt Sall
+News
+
+‘Warhammer: The Old World’: Why No US Open Events?
+
+Abe Apfel
 
 
 
@@ -481,7 +481,7 @@ Matt Sall
 
 Warhammer 40k
 
-Goatboy’s Warhammer 40K: Top 5 Balance Dataslate Misses
+Goatboy’s Warhammer 40K: Top Fight Phase Stratagems of 10th Edition
 
 Thomas / Goatboy
 
@@ -493,7 +493,7 @@ Thomas / Goatboy
 
 Warhammer 40k
 
-Warhammer 40K: The Golden Throne
+Warhammer 40K: Jain Zar – The Storm of Silence
 
 Larry Vela
 
@@ -681,15 +681,15 @@ Trending Topics
 
 
 
-Dungeons & Dragons
-
-
-
-
-
-
-
 Warhammer 40k
+
+
+
+
+
+
+
+Dungeons & Dragons
 
 
 
@@ -713,14 +713,6 @@ Age of Sigmar
 
 
 
-Trailers
-
-
-
-
-
-
-
 Pop Culture
 
 
@@ -729,15 +721,23 @@ Pop Culture
 
 
 
-Cosplay
-
-
-
-
-
-
-
 Star Wars
+
+
+
+
+
+
+
+Magic: The Gathering
+
+
+
+
+
+
+
+Trailers
 
 
 
@@ -761,6 +761,18 @@ Advertisement
 Show All
 
 Deals
+
+
+
+
+
+
+News
+
+These Adeptus Custodes Figures From JoyToy Will Help You Protect the Emperor
+
+Matt Sall
+
 
 
 
@@ -803,18 +815,6 @@ Meaghan Colleran
 
 
 
-Cosplay
-
-This Motoko Kusanagi ‘Ghost in the Shell’ Closet Cosplay is a Cyberpunk Fantasy
-
-Jennifer Larsen
-
-
-
-
-
-
-
 
 
 
@@ -841,9 +841,9 @@ Warhammer 40k
 
 Warhammer 40k
 
-Warhammer: 2024 US Open Series Announced – Plan Your Trips Now
+Horus Heresy: Siege Breaker Consul Are Here To Blow Stuff Up
 
-Games Workshop has announced the dates and locations for the 2024 US Open Series. Start making travel plans for these events!
+When it’s time to demolish the enemy you now have an expert to call in. Meet The Siege Breaker Consul for Horus Heresy.
 
 
 Adam Harrison
@@ -858,7 +858,7 @@ Adam Harrison
 
 Warhammer 40k
 
-Warhammer 40K: Kroot Hounds Revealed – Send The Dogs Out
+Warhammer 40K: List Of The Week – Aeldari Aspect Warriors Strike Again
 
 Adam Harrison
 
@@ -870,7 +870,7 @@ Adam Harrison
 
 Warhammer 40k
 
-Goatboy’s Warhammer 40K: Top 5 Balance Dataslate Misses
+Goatboy’s Warhammer 40K: Top Fight Phase Stratagems of 10th Edition
 
 Thomas / Goatboy
 
@@ -882,7 +882,7 @@ Thomas / Goatboy
 
 Warhammer 40k
 
-Warhammer 40K: The Golden Throne
+Warhammer 40K: Jain Zar – The Storm of Silence
 
 Larry Vela
 
@@ -894,9 +894,9 @@ Larry Vela
 
 Warhammer 40k
 
-Warhammer 40K: What Exactly Is A Rogue Trader Anyway?
+Games Workshop Rumor Engines: Where Are They Now – February 2023 Edition
 
-J.R. Zambrano
+Adam Harrison
 
 
 
@@ -918,7 +918,7 @@ Magic: The Gathering
 
 Magic: The Gathering
 
-MTG: Get a Clue about ‘Murders at Karlov Manor’
+MTG: Ride of the Valkyries – Top 5 Angel Commanders
 
 Clint Lienau
 
@@ -930,7 +930,7 @@ Clint Lienau
 
 Magic: The Gathering
 
-MTG: HIDE YOUR SHINY THINGS – Top 5 Goblin Commanders
+MtG: One Set to Rule Them All – ‘Lord of the Rings: Tales of Middle-earth’
 
 Clint Lienau
 
@@ -942,7 +942,7 @@ Clint Lienau
 
 Magic: The Gathering
 
-MTG: Weekly EDH – Top Five – Fall of the Dinosaurs
+MTG Commander of the Week: Vikya, Scorching Stalwart
 
 Clint Lienau
 
@@ -954,7 +954,7 @@ Clint Lienau
 
 Magic: The Gathering
 
-MTG: They Do Move in Herds – Top 5 Dinosaur Commanders
+MTG: Yes, Play Boosters ARE Better For Draft
 
 Clint Lienau
 
@@ -982,12 +982,12 @@ Dungeons & Dragons
 
 Dungeons & Dragons
 
-Let’s Play D&D With the Ghostbusters
+‘Baldur’s Gate 3’ Embraces Tabletop Chaos as Player Beats Game With Party of Cats
 
-Don’t cross the streams and watch out for the ectoplasm. This week we’re going ghost hunting when we play D&D with the Ghostbusters.
+Baldur’s Gate 3 was never meant to be beaten by a party made entirely of cats. So naturally, that’s what one player has done.
 
 
-Meaghan Colleran
+J.R. Zambrano
 
 
 
@@ -999,7 +999,7 @@ Meaghan Colleran
 
 Dungeons & Dragons
 
-D&D 5E Guide: How to Start Being a Dungeon Master
+Joe Manganiello’s Live-Action ‘Dragonlance’ Show is Reportedly Dead in Water
 
 J.R. Zambrano
 
@@ -1011,11 +1011,9 @@ J.R. Zambrano
 
 Dungeons & Dragons
 
-D&D: How to Play a Dragonborn
+D&D: How to Play a Tabaxi
 
 J.R. Zambrano
- and 
-Meaghan Colleran
 
 
 
@@ -1025,9 +1023,9 @@ Meaghan Colleran
 
 Dungeons & Dragons
 
-‘Horizon Zero Dawn’ Cosplay, Drukhari Lore, ‘Last Light’, More – Weekend Rewind
+How to Use Roll20
 
-Mars Garrett
+J.R. Zambrano
 
 
 
@@ -1037,10 +1035,8 @@ Mars Garrett
 
 Dungeons & Dragons
 
-D&D Race Guide: How to Play a Goliath
+D&D: An Adventurer’s Guide to Drizzt Do’Urden
 
-Meaghan Colleran
- and 
 J.R. Zambrano
 
 
@@ -1055,6 +1051,42 @@ J.R. Zambrano
 Show All
 
 Video Games
+
+
+
+
+
+
+Dungeons & Dragons
+
+‘Baldur’s Gate 3’ Embraces Tabletop Chaos as Player Beats Game With Party of Cats
+
+J.R. Zambrano
+
+
+
+
+
+
+
+Video Games
+
+Cheer On ‘Aristeia!’ With the Upcoming Digital Version, ‘The Hexadome’
+
+Matt Sall
+
+
+
+
+
+
+
+Video Games
+
+‘Lost Hellden’ – New JRPG Announced from Veteran ‘Final Fantasy’ Devs
+
+J.R. Zambrano
+
 
 
 
@@ -1072,42 +1104,6 @@ Jennifer Larsen
 
 
 
-
-Dungeons & Dragons
-
-Minthara Saves ‘Baldur’s Gate 3’s Greatest Speedrun By Being Extremely Horny
-
-J.R. Zambrano
-
-
-
-
-
-
-
-Video Games
-
-Ubisoft’s Ill-Fated ‘Skull and Bones’ Hits Open Beta Next Month
-
-J.R. Zambrano
-
-
-
-
-
-
-
-News
-
-Activision, Blizzard, Xbox, and More: Layoffs Continue in the Video Game Industry
-
-J.R. Zambrano
-
-
-
-
-
-
 Advertisement
 
 
@@ -1125,16 +1121,28 @@ Cosplay
 
 
 
+Cosplay
+
+These Avatar Kyoshi Cosplays Bring Justice and Peace
+
+The Earth Kingdom Avatar was the eldest and fiercest of Avatars. Her legacy continues with these Avatar Kyoshi cosplays!
+
+
+Jennifer Larsen
+
+
+
+
+
+
+
+
+
 Dungeons & Dragons
 
 ‘Horizon Zero Dawn’ Cosplay, Drukhari Lore, ‘Last Light’, More – Weekend Rewind
 
-Dive into this weekend’s hottest news – low-level adventures for your D&D games, Age of Sigamar’s Battle Regiments problem, and DC casting news.
-
-
 Mars Garrett
-
-
 
 
 
@@ -1178,18 +1186,6 @@ Jennifer Larsen
 
 
 
-Warhammer 40k
-
-Flesh-Eater Courts, MtG Zombie Commanders, and More – Weekend Rewind
-
-Mars Garrett
-
-
-
-
-
-
-
 
 
 
@@ -1202,49 +1198,47 @@ RPGs
 
 
 
-Dungeons & Dragons
-
-Let’s Play D&D With the Ghostbusters
-
-Meaghan Colleran
-
-
-
-
-
-
-
 RPGs
 
-‘Memento Mori’ – An RPG of Dreams & Corruption – in Last Days of Crowdfunding
+‘Perils & Princesses’ RPG: Ditch the Prince for Dark Fantasy Adventure
 
-Mars Garrett
-
-
-
-
-
-
-
-Dungeons & Dragons
-
-D&D 5E Guide: How to Start Being a Dungeon Master
-
-J.R. Zambrano
-
-
-
-
-
-
-
-Dungeons & Dragons
-
-D&D: How to Play a Dragonborn
-
-J.R. Zambrano
- and 
 Meaghan Colleran
+
+
+
+
+
+
+
+Tabletop News
+
+New RPG Roundup: ‘Unexpected Guests’ for L5R, ‘Book of Monsters’ Bundle, and More
+
+Matt Sall
+
+
+
+
+
+
+
+Tabletop News
+
+Get the Khitomer Accords Ready, New ‘Star Trek Adventures’ Expansion Takes on ‘Federation-Klingon War’
+
+J.R. Zambrano
+
+
+
+
+
+
+
+Tabletop News
+
+Starfinder 2nd Edition Playtest Rulebook Coming to Gen Con 2024
+
+J.R. Zambrano
 
 
 
@@ -1270,14 +1264,26 @@ Trailers
 
 Trailers
 
-‘Longlegs’ – Occult Mystery Starring Nic Cage Gets a Creepy First Trailer
+‘Quiet Place: Day One’ – Aliens Attack in Prequel’s Terrifying First Trailer
 
-Osgood Perkins’s latest horror movie focuses on a series of occult murders. Check out the first foreboding trailer for Longlegs.
+Experience the day the world went quiet in the chaotic first trailer for Quiet Place: Day One.
 
 
 Mars Garrett
 
 
+
+
+
+
+
+
+
+Trailers
+
+‘Longlegs’ – Occult Mystery Starring Nic Cage Gets a Creepy First Trailer
+
+Mars Garrett
 
 
 
@@ -1321,18 +1327,6 @@ Mars Garrett
 
 
 
-Trailers
-
-‘The Ministry of Ungentlemanly Warfare’ – Henry Cavill Gleefully Hunts Nazis in First Trailer
-
-Mars Garrett
-
-
-
-
-
-
-
 
 
 Most Popular
@@ -1342,17 +1336,17 @@ Most Popular
 
 1.
 
-Dungeons & Dragons
+Warhammer 40k
 
-D&D: Forget Rats In Basements Here Are Five Low-Level Adventure Hooks
+This Week’s Warhammer 40K Products & Pricing CONFIRMED – Orks & Horus Heresy!
 
 
 
 2.
 
-Dungeons & Dragons
+Warhammer 40k
 
-New 5e RPG Roundup: ‘Beacon Bear’, ‘Nights of Chrome’ and More
+Warhammer 40K: Heavy Metal – The Astra Militarum’s Largest Vehicles
 
 
 
@@ -1360,25 +1354,25 @@ New 5e RPG Roundup: ‘Beacon Bear’, ‘Nights of Chrome’ and More
 
 Warhammer 40k
 
-Goatboy’s Warhammer 40K: Top 5 Balance Dataslate Misses
+Warhammer 40K: 1993’s First Tyranid Minis – Still Affecting 10th Edition
 
 
 
 
 4.
 
-News
+Warhammer 40k
 
-‘Warhammer: The Old World’: Hey Games Workshop, The Game Doesn’t Need The Rule-Of-Three
+Games Workshop Rumor Engine: Pull The Tab
 
 
 
 
 5.
 
-Trailers
+Warhammer 40k
 
-‘Squid Game S2’, ‘Beverly Hills Cop’, ‘Avatar’, and More in Netflix 2024 Preview
+Goatboy’s Warhammer 40K: Top 5 Balance Dataslate Misses
 
 
 
@@ -1410,26 +1404,12 @@ Tabletop News
 
 
 
-Warhammer 40k
-
-Warhammer: 2024 US Open Series Announced – Plan Your Trips Now
-
-Games Workshop has announced the dates and locations for the 2024 US Open Series. Start making travel plans for these events!
-
-
-Adam Harrison
-
-
-
-
-
-
-
-
-
 Tabletop News
 
-‘Carcassonne’, the Gold Standard For Board Games, is 25% Off
+New RPG Roundup: ‘Unexpected Guests’ for L5R, ‘Book of Monsters’ Bundle, and More
+
+It’s time to roll the dice on new releases! Come check out this week’s batch of brand-new tabletop role-playing games.
+
 
 Matt Sall
 
@@ -1439,23 +1419,13 @@ Matt Sall
 
 
 
+
+
 Tabletop News
 
-Kickstarter Highlights: ‘Altered TCG’, ‘8-Bit Theater RPG’, and More
+Get the Khitomer Accords Ready, New ‘Star Trek Adventures’ Expansion Takes on ‘Federation-Klingon War’
 
-Matt Sall
-
-
-
-
-
-
-
-Dungeons & Dragons
-
-‘Horizon Zero Dawn’ Cosplay, Drukhari Lore, ‘Last Light’, More – Weekend Rewind
-
-Mars Garrett
+J.R. Zambrano
 
 
 
@@ -1465,7 +1435,31 @@ Mars Garrett
 
 Tabletop News
 
-Survive the Heat Death of the Universe in ‘Last Light’
+Starfinder 2nd Edition Playtest Rulebook Coming to Gen Con 2024
+
+J.R. Zambrano
+
+
+
+
+
+
+
+Tabletop News
+
+‘Welcome to Nuka-World’: The Vault Door Opens for ‘Fallout Factions’, aka Modiphius’ Necromunda
+
+J.R. Zambrano
+
+
+
+
+
+
+
+Tabletop News
+
+Kickstarter Highlights: ‘Trailblazer’, ‘Grid City’, ‘Map Library’, and More
 
 Matt Sall
 
@@ -1481,6 +1475,18 @@ Matt Sall
 Show All
 
 Kickstarter
+
+
+
+
+
+
+Tabletop News
+
+Kickstarter Highlights: ‘Trailblazer’, ‘Grid City’, ‘Map Library’, and More
+
+Matt Sall
+
 
 
 
@@ -1523,18 +1529,6 @@ Matt Sall
 
 
 
-RPGs
-
-Rise Against Dracula’s Court with ‘Veil of the Eternal Night’ for 5e – LIVE on Kickstarter!
-
-Mars Garrett
-
-
-
-
-
-
-
 
 Show All
 
@@ -1547,14 +1541,38 @@ Star Wars
 
 Star Wars
 
+Star Wars: Shatterpoint – Commander Wolffe And The ‘Wolfpack’ Preview
+
+Commander Wolffe and the 104th Wolfpack are coming to Star Wars: Shatterpoint. What will these Clone Wars vets bring to the tabletop?
+
+
+Adam Harrison
+
+
+
+
+
+
+
+
+
+Star Wars
+
+New 25th Anniversary Star Wars LEGO Sets Arrive Next Month
+
+Mars Garrett
+
+
+
+
+
+
+
+Star Wars
+
 Star Wars: The Naboo Starfighter — The Most Beautiful Starfighter in the Galaxy Comes From the Movie You Love to Hate
 
-You might hate The Phantom Menace, but you can’t deny that the N-1 Starfighter from Naboo has bombad style.
-
-
 J.R. Zambrano
-
-
 
 
 
@@ -1586,30 +1604,6 @@ Meaghan Colleran
 
 
 
-Star Wars
-
-Star Wars: The Clone Wars, or That Time Palpatine Destroyed the Republic
-
-Meaghan Colleran
-
-
-
-
-
-
-
-Star Wars
-
-Star Wars: You Mean the Empire Had a Walker That Wouldn’t Fall Over All Along? – The AT-TE Breakdown
-
-J.R. Zambrano
-
-
-
-
-
-
-
 Advertisement
 
 
@@ -1622,6 +1616,18 @@ Advertisement
 Show All
 
 Star Trek
+
+
+
+
+
+
+Tabletop News
+
+Get the Khitomer Accords Ready, New ‘Star Trek Adventures’ Expansion Takes on ‘Federation-Klingon War’
+
+J.R. Zambrano
+
 
 
 
@@ -1664,23 +1670,23 @@ Lina Morgan
 
 
 
-Pop Culture
-
-‘Star Trek’s First Major Enemies – The Romulan Breakdown
-
-Lina Morgan
-
-
-
-
-
-
-
 
 
 Show All
 
 Board Games
+
+
+
+
+
+
+Tabletop News
+
+It’ll Be More Than Just a Flesh Wound If You Miss the ‘Monty Python: Holy Grail’ Board Game
+
+Matt Sall
+
 
 
 
@@ -1723,18 +1729,6 @@ Matt Sall
 
 
 
-News
-
-Even After All These Years, ‘Mage Knight’ is Still My Favorite Board Game
-
-Matt Sall
-
-
-
-
-
-
-
 
 
 Show All
@@ -1746,9 +1740,21 @@ Pop Culture
 
 
 
-Trailers
+Pop Culture
 
-‘Longlegs’ – Occult Mystery Starring Nic Cage Gets a Creepy First Trailer
+Oh My Glob, It’s Fionna & Cake Explained
+
+Meaghan Colleran
+
+
+
+
+
+
+
+Pop Culture
+
+Donald Glover Reveals What the Highly Anticipated ‘Community’ Movie is About
 
 Mars Garrett
 
@@ -1760,21 +1766,9 @@ Mars Garrett
 
 Dungeons & Dragons
 
-Let’s Play D&D With the Ghostbusters
+Joe Manganiello’s Live-Action ‘Dragonlance’ Show is Reportedly Dead in Water
 
-Meaghan Colleran
-
-
-
-
-
-
-
-Trailers
-
-New Trailers & Pop News: ‘Super Girl’ Cast, ‘Severance S2’, ‘Dune: Part 2’, and More
-
-Mars Garrett
+J.R. Zambrano
 
 
 
@@ -1782,11 +1776,11 @@ Mars Garrett
 
 
 
-Trailers
+Cosplay
 
-‘Squid Game S2’, ‘Beverly Hills Cop’, ‘Avatar’, and More in Netflix 2024 Preview
+These Avatar Kyoshi Cosplays Bring Justice and Peace
 
-Mars Garrett
+Jennifer Larsen
 
 
 
