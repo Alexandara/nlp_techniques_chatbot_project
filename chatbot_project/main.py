@@ -35,4 +35,5 @@ if __name__ == '__main__':
         crawler.build_knowledge_base()
 
     adamant = chatbot.Chatbot()
+    adamant.chat()
 
