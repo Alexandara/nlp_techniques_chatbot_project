@@ -21,6 +21,7 @@ def generate_name():
 	name += consonants[randint(0, len(consonants)-1)]
 	name += vowels[randint(0, len(vowels)-1)]
 	name += consonants[randint(0, len(consonants) - 1)]
+	return name
 
 # Code inspired by code from Dr. Mazidi's GitHub below
 def is_valuable(element):
