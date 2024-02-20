@@ -1,4 +1,3 @@
-adventurer
 battle
 spellbook
 combat

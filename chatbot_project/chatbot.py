@@ -38,13 +38,14 @@ class Chatbot():
 				self.user_base = pickle.load(handle)
 		except:
 			print("No user base found. Initializing without user base.")
-		self.rule = "[Type \"EXIT\" to finish chatting and save your user model]"
+			self.user_base = {}
+		self.rule = "[Type \"EXIT\" to finish chatting and save your user model]\n"
 		self.possible_introductions = [
-			"Hello, my name is Adamant. Who are you?",
-			"Salutations. I am Adamant. What is your designation?",
-			"Hello. I am a rudimentary automaton designed for human companionship. My name is Adamant. What is yours?",
-			"Greetings. What is your name? I am called Adamant.",
-			"Greetings, human. I am called Adamant. What is your name?"
+			self.rule + "Hello, my name is Adamant. Who are you?" + "\n",
+			self.rule + "Salutations. I am Adamant. What is your designation?" + "\n",
+			self.rule + "Hello. I am a rudimentary automaton designed for human companionship. My name is Adamant. What is yours?" + "\n",
+			self.rule + "Greetings. What is your name? I am called Adamant." + "\n",
+			self.rule + "Greetings, human. I am called Adamant. What is your name?" + "\n"
 		]
 		self.curr_user = None
 
@@ -85,15 +86,26 @@ class Chatbot():
 			response = self.ex(input("It's nice to meet you, " + self.curr_user.name + ". What would you like to talk about?\n"))
 			topic = self.get_topic(response)
 		else:
-			suggestion = self.curr_user.likes[randint(0, len(self.curr_user.likes)-1)]
-			response = self.ex(input("Welcome back, " + self.curr_user.name + ". Would you like to talk about " +
+			try:
+				suggestion = self.curr_user.likes[randint(0, len(self.curr_user.likes)-1)]
+			except:
+				try:
+					suggestion = self.curr_user.dislikes[randint(0, len(self.curr_user.dislikes) - 1)]
+				except:
+					suggestion = None
+			if suggestion:
+				response = self.ex(input("Welcome back, " + self.curr_user.name + ". Would you like to talk about " +
 			                         suggestion + " again?\n"))
-			if "yes" in response.lower():
-				topic = suggestion
+				if "yes" in response.lower():
+					topic = suggestion
+				else:
+					topic = self.get_topic(response)
+				if not topic:
+					response = self.ex(input("What would you like to discuss, then?\n"))
+					topic = self.get_topic(response)
 			else:
-				topic = self.get_topic(response)
-			if not topic:
-				response = self.ex(input("What would you like to discuss, then?\n"))
+				response = self.ex(input("Welcome back, " + self.curr_user.name + ". " +
+				                         "What would you like to discuss this time?\n"))
 				topic = self.get_topic(response)
 		# At this point, the main conversation loop can begin
 		while True:
@@ -106,28 +118,35 @@ class Chatbot():
 				if topic in self.curr_user.likes:
 					speaking_options = [
 						topic.title() + " is also one of my favorite topics to discuss. Here's something I know " +
-						                "about it: " + random_fact,
-						"I recall that you like " + topic + ". Did you know this? " + random_fact,
-						"Humans do enjoy discussing the topics they like. Here's what I have in my database: " random_fact
+						                "about it: " + random_fact + "\n",
+						"I recall that you like " + topic + ". Did you know this? " + random_fact + "\n",
+						"Humans do enjoy discussing the topics they like. Here's what I have in my database: " + random_fact + "\n"
 					]
 				elif topic in self.curr_user.dislikes:
 					speaking_options = [
 						"Know thy enemy. Is that why you want to discuss " + topic + " even though you dislike that topic? " +
-						            "I can respect that. Here's something I know: " + random_fact,
-						"I believe " + random_fact + " What a horrible fact.",
-						"I believe you spoke negatively about " + topic + " in the past. In any event, " + random_fact
+						            "I can respect that. Here's something I know: " + random_fact + "\n",
+						"I believe " + random_fact + " What a horrible fact." + "\n",
+						"I believe you spoke negatively about " + topic + " in the past. In any event, " + random_fact + "\n"
 					]
 				else:
 					speaking_options = [
-						"I see, you'd like to talk about " + topic + ". Here's what I think: " + random_fact,
-						"I think " + random_fact + " Does that make sense?",
-						"This feels like a topic you're fairly neutral about. About " + topic + " I know " + random_fact
+						"I see, you'd like to talk about " + topic + ". Here's what I think: " + random_fact + "\n",
+						"I think " + random_fact + " Does that make sense?" + "\n",
+						"About " + topic + " I know " + random_fact + "\n"
 					]
 				response = self.ex(input(speaking_options[randint(0,len(speaking_options)-1)]))
 				topic = self.get_topic(response)
 			else:
 				# No topic found
-				# CHANGEX
+				random_topic = list(self.kb.keys())
+				suggested_topic = random_topic[randint(0,len(random_topic)-1)]
+				response = self.ex(input("I don't know about that. Do you want to talk about " + suggested_topic + "?\n"))
+				if "yes" in response.lower() or "sure" in response.lower() or "yeah" in response.lower() \
+						or "yep" in response.lower() or "okay" in response.lower():
+					topic = suggested_topic
+				else:
+					topic = self.get_topic(response)
 
 	# Retrieval using similarity measures from the corpus you created in part 1
 	# Hard-coded responses with some randomization (perhaps for greetings, etc.)
@@ -136,6 +155,8 @@ class Chatbot():
 	# techniques we learned in class.
 
 	def get_name(self, sentence):
+		# CHANGEX
+		# Name returned should have no punctuation and no whitespace
 		tokens = nltk.word_tokenize(sentence)
 		for token in tokens:
 			if token != self.spellchecker.correction(token):
@@ -158,6 +179,8 @@ class Chatbot():
 			pickle.dump(self.user_base, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 	def get_topic(self, response):
+		# CHANGEX
+		# Things are marked as negative or positive before the chatbot can respond
 		keys = list(self.kb.keys())
 		for key in keys:
 			if key in response:
@@ -169,3 +192,9 @@ class Chatbot():
 					self.curr_user.dislikes.append(key)
 				return key
 		return None
+
+	def get_similar(self, sent, sentences):
+		# CHANGEX
+		# Implement
+		for sentence in sentences:
+			print(sentence)
