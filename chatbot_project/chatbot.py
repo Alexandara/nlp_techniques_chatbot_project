@@ -63,8 +63,6 @@ class Chatbot():
 		response = self.ex(input(self.possible_introductions[randint(0, len(self.possible_introductions)-1)]))
 		name = self.get_name(response)
 		# Find a valid name logic, if the name is not found, create one!
-		if len(nltk.word_tokenize(response)) == 1:
-			name = response
 		if not name:
 			response = self.ex(input("I'm sorry, I didn't get your name. Could you repeat it?\n"))
 			name = self.get_name(response)
@@ -111,8 +109,7 @@ class Chatbot():
 		while True:
 			# If we've found a topic, great! Talk about it.
 			if topic:
-				random_facts = self.kb[topic]
-				random_fact = random_facts[randint(0,len(random_facts)-1)]
+				random_fact = self.get_similar(response, self.kb[topic])
 				if random_fact[-1] != "." and random_fact[-1] != "!" and random_fact[-1] != "?":
 					random_fact = random_fact + "."
 				if topic in self.curr_user.likes:
@@ -148,19 +145,15 @@ class Chatbot():
 				else:
 					topic = self.get_topic(response)
 
-	# Retrieval using similarity measures from the corpus you created in part 1
-	# Hard-coded responses with some randomization (perhaps for greetings, etc.)
-	# Make sure your project includes NLP techniques learned in class. Examples: parse user
-	# response, use term frequency measures, NER, or information retrieval techniques, or any
-	# techniques we learned in class.
-
 	def get_name(self, sentence):
-		# CHANGEX
-		# Name returned should have no punctuation and no whitespace
 		tokens = nltk.word_tokenize(sentence)
+		if len(tokens) == 1:
+			word = tokens[0].replace(" ", "")
+			return word
 		for token in tokens:
 			if token != self.spellchecker.correction(token):
-				return token
+				word = token.replace(" ", "")
+				return word
 		return False
 
 	def ex(self, response):
@@ -179,22 +172,28 @@ class Chatbot():
 			pickle.dump(self.user_base, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 	def get_topic(self, response):
-		# CHANGEX
-		# Things are marked as negative or positive before the chatbot can respond
 		keys = list(self.kb.keys())
+		new_response = response.lower()
+		new_response = new_response.replace(".", "").replace(",", "").replace("!", "").replace("?", "")
 		for key in keys:
-			if key in response:
+			if key in new_response:
 				# If we've found a key, we want to update the user model with it whether it is positive or negative
 				score = self.sentiment.polarity_scores(response)["compound"]
-				if score > .3:
+				if score > .5:
 					self.curr_user.likes.append(key)
-				elif score < -.3:
+				elif score < -.5:
 					self.curr_user.dislikes.append(key)
 				return key
 		return None
 
 	def get_similar(self, sent, sentences):
-		# CHANGEX
-		# Implement
+		max_sim = 0
+		similar = ""
 		for sentence in sentences:
-			print(sentence)
+			v1 = utilities.text_to_vector(sent)
+			v2 = utilities.text_to_vector(sentence)
+			similarity = utilities.get_cosine(v1, v2)
+			if similarity >= max_sim:
+				max_sim = similarity
+				similar = sentence
+		return similar
