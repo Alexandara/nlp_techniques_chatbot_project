@@ -113,12 +113,16 @@ class WebCrawler():
 	# Instruction:
 	# Write another function to clean up the text files. Read in each raw file and clean it up as
 	# much as possible with NLP techniques. If you have x files in, you will have x files out.
-	def clean_files(self):
+	@staticmethod
+	def clean_files():
+		"""
+		This method reads in web text and then cleans them up and outputs them again.
+		"""
 		print("Cleaning scraped text...")
 		files = os.listdir("files/raw_information/")
 		for file in files:
 			information = utilities.read_file_into_list("files/raw_information/" + file)
-			url = information.pop(0)
+			information.pop(0)
 			clean_text = ""
 			for info in information:
 				new_info = info.replace("\n", "")

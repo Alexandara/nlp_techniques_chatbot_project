@@ -5,6 +5,7 @@ import os
 
 if __name__ == '__main__':
     # Take in a system argument about whether to run the web crawler or not
+    # Default is not to run the web crawler
     web_first = False
     try:
         if sys.argv[1] == "True":
@@ -33,7 +34,10 @@ if __name__ == '__main__':
             crawler.extract_important_terms()
         # Build final knowledge base
         crawler.build_knowledge_base()
-
+    # Start the chatbot
     adamant = chatbot.Chatbot()
-    adamant.chat()
+    for key in adamant.kb.keys():
+        print(key + ": ")
+        print(len(adamant.kb[key]))
+    # adamant.chat()
 

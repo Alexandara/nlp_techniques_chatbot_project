@@ -4,7 +4,6 @@ This code creates and runs the chatbot, who I have named Adamant.
 """
 import os
 import pickle
-from random import seed
 from random import randint
 import nltk
 import utilities
@@ -14,9 +13,13 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 class Chatbot():
 	def __init__(self):
+		"""
+		Initializes the chatbot.
+		"""
 		nltk.download('punkt')
 		self.spellchecker = SpellChecker()
 		self.sentiment = SentimentIntensityAnalyzer()
+		# Check which OS is being used and set up the filenames appropriately
 		system = os.name
 		if system == "posix":
 			filename = "files/knowledge_base/kb.pickle"
@@ -27,18 +30,21 @@ class Chatbot():
 		else:
 			print("Operating system not recognized. Contact the developer for more information.")
 			exit(1)
+		# Load Knowledge Base
 		try:
 			with open(filename, 'rb') as handle:
 				self.kb = pickle.load(handle)
 		except:
 			print("Knowledge base cannot be loaded. Is it located at files/knowledge_base/kb.pickle?")
 			exit(1)
+		# Load User Base
 		try:
 			with open(self.userloc, 'rb') as handle:
 				self.user_base = pickle.load(handle)
 		except:
 			print("No user base found. Initializing without user base.")
 			self.user_base = {}
+		# Definitions for some greetings
 		self.rule = "[Type \"EXIT\" to finish chatting and save your user model]\n"
 		self.possible_introductions = [
 			self.rule + "Hello, my name is Adamant. Who are you?" + "\n",
@@ -50,6 +56,9 @@ class Chatbot():
 		self.curr_user = None
 
 	def chat(self):
+		"""
+		The main conversation loop of the chatbot.
+		"""
 		# Make some space for the user to see the chatbot is starting
 		print("Chatbot initializing...")
 		time.sleep(1)
@@ -94,7 +103,8 @@ class Chatbot():
 			if suggestion:
 				response = self.ex(input("Welcome back, " + self.curr_user.name + ". Would you like to talk about " +
 			                         suggestion + " again?\n"))
-				if "yes" in response.lower():
+				if "yes" in response.lower() or "sure" in response.lower() or "yeah" in response.lower() \
+						or "yep" in response.lower() or "okay" in response.lower():
 					topic = suggestion
 				else:
 					topic = self.get_topic(response)
@@ -109,7 +119,7 @@ class Chatbot():
 		while True:
 			# If we've found a topic, great! Talk about it.
 			if topic:
-				random_fact = self.get_similar(response, self.kb[topic])
+				random_fact = utilities.get_similar(response, self.kb[topic])
 				if random_fact[-1] != "." and random_fact[-1] != "!" and random_fact[-1] != "?":
 					random_fact = random_fact + "."
 				if topic in self.curr_user.likes:
@@ -146,6 +156,11 @@ class Chatbot():
 					topic = self.get_topic(response)
 
 	def get_name(self, sentence):
+		"""
+		This method parses a sentence for a name and returns it.
+		:param sentence: user sentence containing a name
+		:return: the first word in the sentence not in the English dictionary, or False if all words are English words
+		"""
 		tokens = nltk.word_tokenize(sentence)
 		if len(tokens) == 1:
 			word = tokens[0].replace(" ", "")
@@ -157,6 +172,13 @@ class Chatbot():
 		return False
 
 	def ex(self, response):
+		"""
+		This function serves as a passthrough that scans user input for the word "exit". If the user inputs "exit"
+		the program ends, otherwise the response is returned unchanged.
+		Best use of this function: user_response = self.ex(input("Chatbot words"))
+		:param response: the sentence to parse
+		:return: the response, unless an exit is found
+		"""
 		if response.lower() == "exit":
 			if self.curr_user:
 				print("Thank you for chatting with me. I will remember you, " + self.curr_user.name + ".\n")
@@ -167,11 +189,19 @@ class Chatbot():
 		return response
 
 	def save_user(self):
+		"""
+		This adds the current user to the user base and then saves the new user base.
+		"""
 		self.user_base[self.curr_user.name] = self.curr_user
 		with open(self.userloc, 'wb') as handle:
 			pickle.dump(self.user_base, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 	def get_topic(self, response):
+		"""
+		This function finds a topic in the knowledge base in the sentence.
+		:param response: sentence to check for a topic
+		:return: topic if found, otherwise None.
+		"""
 		keys = list(self.kb.keys())
 		new_response = response.lower()
 		new_response = new_response.replace(".", "").replace(",", "").replace("!", "").replace("?", "")
@@ -185,15 +215,3 @@ class Chatbot():
 					self.curr_user.dislikes.append(key)
 				return key
 		return None
-
-	def get_similar(self, sent, sentences):
-		max_sim = 0
-		similar = ""
-		for sentence in sentences:
-			v1 = utilities.text_to_vector(sent)
-			v2 = utilities.text_to_vector(sentence)
-			similarity = utilities.get_cosine(v1, v2)
-			if similarity >= max_sim:
-				max_sim = similarity
-				similar = sentence
-		return similar

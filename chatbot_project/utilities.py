@@ -9,6 +9,8 @@ from random import randint
 import math
 from collections import Counter
 
+WORD = re.compile(r"\w+")
+
 consonants = [
     "b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"
 ]
@@ -17,6 +19,11 @@ vowels = [
 ]
 
 def generate_name():
+    """
+    This function generates a random name for when the user's name cannot be parsed.
+    It's quite fun, try it out!
+    :return: randomly generated name
+    """
     name = ""
     name += consonants[randint(0, len(consonants)-1)].upper()
     name += vowels[randint(0, len(vowels)-1)]
@@ -107,12 +114,13 @@ def tokenize_clean_text():
 # The user model can be a simple text or xml file.
 class user():
     def __init__(self, name):
+        """
+        Initializes a user with a name and no likes or dislikes.
+        :param name: user name
+        """
         self.name = name
         self.likes = []
         self.dislikes = []
-
-
-WORD = re.compile(r"\w+")
 
 # Code inspired by https://stackoverflow.com/questions/15173225/calculate-cosine-similarity-given-2-sentence-strings
 def get_cosine(vec1, vec2):
@@ -132,3 +140,22 @@ def get_cosine(vec1, vec2):
 def text_to_vector(text):
     words = WORD.findall(text)
     return Counter(words)
+
+
+def get_similar(sent, sentences):
+    """
+    Calculates the most similar sentence in sentences to the one in sent using cosine similarity
+    :param sent: original sentence
+    :param sentences: array of sentences to check against
+    :return:
+    """
+    max_sim = 0
+    similar = ""
+    for sentence in sentences:
+        v1 = text_to_vector(sent)
+        v2 = text_to_vector(sentence)
+        similarity = get_cosine(v1, v2)
+        if similarity >= max_sim:
+            max_sim = similarity
+            similar = sentence
+    return similar
