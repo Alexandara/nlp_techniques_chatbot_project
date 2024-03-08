@@ -36,8 +36,5 @@ if __name__ == '__main__':
         crawler.build_knowledge_base()
     # Start the chatbot
     adamant = chatbot.Chatbot()
-    for key in adamant.kb.keys():
-        print(key + ": ")
-        print(len(adamant.kb[key]))
-    # adamant.chat()
+    adamant.chat()
 
