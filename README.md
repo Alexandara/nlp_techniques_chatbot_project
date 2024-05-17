@@ -1,5 +1,5 @@
-# Chatbot Project 1
-A simple Dungeons and Dragons chatbot with a rudimentary web crawler component. 
+# Chatbot Project 
+A simple Dungeons and Dragons chatbot with a rudimentary machine learning text generation component. 
 
 ## How to Run
 ### In the Terminal
@@ -11,6 +11,7 @@ python3 main.py
 Navigate to chatbot_project/chatbot_project/main.py and click on the green play button next to the main method.
 
 ## Directory
+### Web Crawling
 The code for the Web Crawler component is in web_crawler.py and the code for the chatbot is in chatbot.py. 
 The file utilities.py contains utility functions used by the main code, and main.py runs the web crawler and chatbot.
 Under chatbot_project/files are:
@@ -21,6 +22,17 @@ Under chatbot_project/files are:
 - the terms chosen by the author (important_terms/chosenterms.txt)
 - the pickled knowledge base (knowledge_base/kb.pickle)
 - the pickled user base (user_base/ub.pickle)
+
+### Machine Learning
+The code for the machine learning portion of the project is in deep_learning_chatbot_project/chatbot and 
+consists of the following components:
+- a script to process the data from the web into text format (data_preprocessing.py)
+- the main code for the model training and generation (model_training.py)
+- the code I used to run the code (main.py)
+- the raw data from the internet (files/downloaded_data and files/unused_data)
+- the saved processed trigrams (saved_trigram_data)
+- the saved model data (saved_model_data)
+- the data the chatbot actually uses is in the main area of the files
 
 ## Contact
 Please contact the author with any questions.

@@ -2,34 +2,61 @@
 Code by Alexis Tudor
 This code creates and runs the chatbot, who I have named Adamant.
 """
+import difflib
 import os
 import pickle
+import random
 from random import randint
 import nltk
 import utilities
 from spellchecker import SpellChecker
 import time
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+import torch
+from deep_learning_chatbot_project.chatbot.model_training import RNN
 
 class Chatbot():
-	def __init__(self):
+	def __init__(self, machine_learning_enabled=False):
 		"""
 		Initializes the chatbot.
 		"""
 		nltk.download('punkt')
-		self.spellchecker = SpellChecker()
-		self.sentiment = SentimentIntensityAnalyzer()
 		# Check which OS is being used and set up the filenames appropriately
-		system = os.name
-		if system == "posix":
+		self.system = os.name
+		if self.system == "posix":
 			filename = "files/knowledge_base/kb.pickle"
 			self.userloc = "files/user_base/ub.pickle"
-		elif system == "nt":
+			model_file = "files/chosen_model/final_model_chat_generator_model.pt"
+			word_ix = "files/chosen_model/2_model_word_to_ix.pickle"
+			lengths = "files/chosen_model/2_model_lengths.pickle"
+		elif self.system == "nt":
 			filename = "files\\knowledge_base\\kb.pickle"
 			self.userloc = "files\\user_base\\ub.pickle"
+			model_file = "files\\chosen_model\\final_model_chat_generator_model.pt"
+			word_ix = "files\\chosen_model\\2_model_word_to_ix.pickle"
+			lengths = "files\\chosen_model\\2_model_lengths.pickle"
 		else:
 			print("Operating system not recognized. Contact the developer for more information.")
 			exit(1)
+		self.ml = machine_learning_enabled
+		self.ml_topics = ["actors", "dungeon", "turn", "roll", "kraghammer", "advantage", "initiative",
+			        "dragon", "dm", "strength", "dexterity", "constitution", "wisdom", "intelligence",
+			        "charisma", "modifier", "damage"]
+		if self.ml:
+			print("Machine learning text generation enabled...")
+			print("Loading vocabulary...")
+			with open(word_ix, 'rb') as handle:
+				self.word_to_ix = pickle.load(handle)
+			with open(lengths, 'rb') as handle:
+				lengths = pickle.load(handle)
+				self.chunk_length = lengths[0]
+				self.voc_len = lengths[1]
+			print("Loading model...")
+			self.decoder = RNN(self.voc_len, 500, self.voc_len, 4)
+			self.decoder.load_state_dict(torch.load(model_file))
+			self.decoder.eval()
+		self.spellchecker = SpellChecker()
+		self.sentiment = SentimentIntensityAnalyzer()
 		# Load Knowledge Base
 		try:
 			with open(filename, 'rb') as handle:
@@ -119,7 +146,10 @@ class Chatbot():
 		while True:
 			# If we've found a topic, great! Talk about it.
 			if topic:
-				random_fact = utilities.get_similar(response, self.kb[topic])
+				if self.ml:
+					random_fact = self.generate_response(topic + " is", predict_len=5, temperature=10)
+				else:
+					random_fact = utilities.get_similar(response, self.kb[topic])
 				if random_fact[-1] != "." and random_fact[-1] != "!" and random_fact[-1] != "?":
 					random_fact = random_fact + "."
 				if topic in self.curr_user.likes:
@@ -147,6 +177,8 @@ class Chatbot():
 			else:
 				# No topic found
 				random_topic = list(self.kb.keys())
+				if self.ml:
+					random_topic = self.ml_topics
 				suggested_topic = random_topic[randint(0,len(random_topic)-1)]
 				response = self.ex(input("I don't know about that. Do you want to talk about " + suggested_topic + "?\n"))
 				if "yes" in response.lower() or "sure" in response.lower() or "yeah" in response.lower() \
@@ -203,6 +235,8 @@ class Chatbot():
 		:return: topic if found, otherwise None.
 		"""
 		keys = list(self.kb.keys())
+		if self.ml:
+			keys = self.ml_topics
 		new_response = response.lower()
 		new_response = new_response.replace(".", "").replace(",", "").replace("!", "").replace("?", "")
 		for key in keys:
@@ -215,3 +249,44 @@ class Chatbot():
 					self.curr_user.dislikes.append(key)
 				return key
 		return None
+
+	def generate_response(self, prime_str, predict_len=100, temperature=0.8):
+		"""
+		This function generates a sentence based on the first two words
+		of it using the machine learning model
+		NOTE: This code is modified based on the evaluation function
+		in the deep_learning_chatbot_project/model_training.py
+		:param prime_str: The first two words in the sentence
+		:param predict_len: How many words to generate
+		:param temperature: How much variation should be in the response
+		(Lower temperatures result in more repeated words)
+		:return: the completed string
+		"""
+		hidden = self.decoder.init_hidden()
+		words_in_dict = self.word_to_ix.keys()
+		starter_words = prime_str.split()
+		# If we're using new words, we need to check if they're in our dictionary
+		# or else this will crash. We select the closest word possible if that's the
+		# case. This is a bad solution, but hey, it's been a long semester and
+		# we're all only human, right?
+		for index, word in enumerate(starter_words):
+			if not word in words_in_dict:
+				new_word = difflib.get_close_matches(word, words_in_dict)
+				if len(new_word) == 0:
+					starter_words[index] = random.choice(list(words_in_dict))
+				else:
+					starter_words[index] = new_word[0]
+		for p in range(predict_len):
+			prime_input = torch.tensor([self.word_to_ix[w] for w in starter_words], dtype=torch.long)
+			input = prime_input[-2:]
+			output, hidden = self.decoder(input, hidden)
+
+			# Generate words from sampling the model
+			output_dist = output.data.view(-1).div(temperature).exp()
+			top_i = torch.multinomial(output_dist, 1)[0]
+
+			# Make a new string with the predicted word and repeat
+			predicted_word = list(self.word_to_ix.keys())[list(self.word_to_ix.values()).index(top_i)]
+			prime_str += " " + predicted_word
+
+		return prime_str

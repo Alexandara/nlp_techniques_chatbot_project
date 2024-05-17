@@ -35,6 +35,6 @@ if __name__ == '__main__':
         # Build final knowledge base
         crawler.build_knowledge_base()
     # Start the chatbot
-    adamant = chatbot.Chatbot()
+    adamant = chatbot.Chatbot(machine_learning_enabled=True)
     adamant.chat()
 
